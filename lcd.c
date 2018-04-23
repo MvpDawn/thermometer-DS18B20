@@ -91,10 +91,10 @@ void LcdDisplayChar(uchar X,Y ,uchar dat)
 
 void LcdDisplayStr(uchar X,Y ,uchar *str)
 {
-	uchar i=0;
-	while (str[i]!='\0') //若到达字串尾则退出
+	uchar index=0;
+	while (str[index]!='\0') //若到达字串尾则退出
 	{
-	 LcdDisplayChar(X, Y, str[i++]); //显示单个字符并且字符标志位后移一位
+	 LcdDisplayChar(X, Y, str[index++]); //显示单个字符并且字符标志位后移一位
 	 X++;
 	}
 }
