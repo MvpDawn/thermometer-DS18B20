@@ -21,6 +21,6 @@ uchar DS18B20ReadByte();		  // 从DS18B20读取一个字节
 void  DS18B20TransfTemp();		  // 让18b20开始转换温度
 void  DS18B20ReadTempCom();		  // 发送读取温度命令
 int DS18B20ReadTemp();			  // 读取温度值（数字量）
-uchar* DS18B20toString();			  // 读取温度值并转化为字符串（模拟量，保留两位小数）
-
+float DS18B20NumTemp();			  // 将温度数字量转模拟量
+uchar* DS18B20toString(float numtemp);// 将温度值转化为字符串（模拟量，保留两位小数）
 #endif
